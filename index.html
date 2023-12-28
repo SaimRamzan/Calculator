@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="image source/calculator.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="main-cointainer">
+        <div class="main-sub-container">
+        <h3 id="clac" class="clac">Calc</h3>
+        <input id="switch" class="switch" type="checkbox" checked="true">
+    </div>
+        <div class="display">
+
+            <input id="display" class="inputfiled" type="text" name="display">
+        </div>
+        <div class="sub-container">
+ 
+            <div>
+                <input type="button" value="7" onclick="appendToDisplay('7')">
+                <input type="button" value="8" onclick="appendToDisplay('8')">
+                <input type="button" value="9" onclick="appendToDisplay('9')">
+                <input type="button" class="del" value="DEL" onclick="deleteLastChar()">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="appendToDisplay('4')">
+                <input type="button" value="5" onclick="appendToDisplay('5')">
+                <input type="button" value="6" onclick="appendToDisplay('6')">
+                <input type="button" value="+" onclick="appendToDisplay('+')">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="appendToDisplay('1')">
+                <input type="button" value="2" onclick="appendToDisplay('2')">
+                <input type="button" value="3" onclick="appendToDisplay('3')">
+                <input type="button" value="-" onclick="appendToDisplay('-')">
+            </div>
+            <div>
+                <input type="button" value="." onclick="appendToDisplay('.')">
+                <input type="button" value="0" onclick="appendToDisplay('0')">
+                <input type="button" value="/" onclick="appendToDisplay('/')">
+                <input type="button" value="*" onclick="appendToDisplay('*')">
+            </div>
+            <div>
+                <input type="button" class="reset" value="RESET" onclick="resetDisplay()">
+                <input type="button" class="equal" value="=" onclick="calculate()">
+            </div>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
